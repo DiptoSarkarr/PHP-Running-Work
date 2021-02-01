@@ -203,5 +203,51 @@ include "site2.php";
 
 </section>
 
+<section>
+  
+<?php
+//class concept & constructer
+class Friend {
+private $name;
+var $number;
+var $address;
+function __construct($name) {
+  $this->name=$name;
+  echo "This is $name Data";
+  
+}
+function fun1($name){
+  /*if ($this->name=="Shihab") {
+    echo "Very Good";
+  }
+*/
+$this->name=$name;
+return $name;
+
+}
+
+
+}
+
+$friend1= new Friend("Shihab Uddin");
+
+
+$friend1->number="01234565";
+$friend1->address="Dhaka";
+
+
+echo $friend1->number;
+echo $friend1->address;
+echo $friend1->fun1("Dipto");
+
+
+
+
+
+?>
+
+
+</section>
+
   </body>
 </html>
